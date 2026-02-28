@@ -2,10 +2,13 @@
 {
     public class Time
     {
+        // fiels
         private int _hour;
         private int _millisecond;
         private int _minute;
         private int _second;
+
+        // Constructors
         public Time()
         {
             Hour = 0;
@@ -46,6 +49,7 @@
             Milliseconds = milliseconds;
         }
 
+        // Properties
         public int Hour
         {
             get => _hour;
@@ -70,6 +74,7 @@
             set => _second = ValidateSecond(value);
         }
 
+        // Methods
         public override string ToString()
         {
             int hour12 = Hour % 12;
